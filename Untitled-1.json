@@ -1,0 +1,64 @@
+{
+  "user": {
+    "id": "uuid",
+    "firstName": "Karan",
+    "lastname": "Talapalli",
+    "dateOfBirth": "11/09/1994",
+    "profession": "Software engineer",
+    "workingHours": {
+      "start": "timeStamp",
+      "end": "timeStamp"
+    },
+    "todos": [
+      {
+        "id": 1,
+        "todoTitle": "This is my first todo",
+        "description": "This is my first todo description",
+        "todoCreateTime": "timestamp",
+        "category": "work",
+        "todoStatus": "completed"
+      },
+      {
+        "id": 2,
+        "todoTitle": "This is my second todo",
+        "description": "This is my second todo description",
+        "todoCreateTime": "timestamp",
+        "category": "personal",
+        "todoStatus": "created"
+      }
+    ],
+    "habits": [
+      {
+        "id": 1,
+        "habitName": "Drink water",
+        "reminder": "timestamp",
+        "repeats": {
+          "isRepeated": true,
+          "numberOfRepeats": 8,
+          "reminderDuration": 15
+        }
+      },
+      {
+        "id": 2,
+        "habitName": "Lunch",
+        "reminder": "timestamp",
+        "repeats": {
+          "isRepeated": false,
+          "numberOfRepeats": 0,
+          "reminderDuration": 0
+        }
+      }
+    ],
+    "statistics": {
+      "dailyGoalsScore": 0,
+      "habitsGoalsScore": 0
+    },
+    "settings": {
+      "notificationSettings": {
+        "goals": true,
+        "habits": true,
+        "stats": true
+      }
+    }
+  }
+}

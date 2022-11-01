@@ -1,0 +1,46 @@
+.left-leaned-header .site-header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.site-header h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  background: -webkit-linear-gradient(#e99497, #f3c583, #e8e46e, #b3e283);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.main-navigation li {
+  display: block;
+  padding: 10px 15px;
+  background: rgba(233, 148, 151, 0.7);
+  border-bottom: 1px solid #e99497;
+  font-weight: 700;
+  color: #FFFFFF;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: 0.3s all ease;
+}
+.main-navigation li:hover {
+  background: #e99497;
+}
+.main-navigation li:last-child {
+  border-bottom: 0;
+}
+/* 
+.card {
+  border-radius: 5px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+} */

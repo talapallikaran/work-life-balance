@@ -1,0 +1,137 @@
+* {
+  font-family: "Poppins", sans-serif;
+  color: #1a1a1a;
+  font-weight: 400;
+  line-height: normal;
+}
+.main-application {
+  padding: 15px 0 0;
+  height: 100vh;
+  background: #ffffff;
+  /* background: #e99497;
+  background: -moz-linear-gradient(
+    top,
+    #e99497 0%,
+    #f3c583 25%,
+    #fce42f 50%,
+    #e8e46e 75%,
+    #b3e283 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    #e99497 0%,
+    #f3c583 25%,
+    #fce42f 50%,
+    #e8e46e 75%,
+    #b3e283 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    #e99497 0%,
+    #f3c583 25%,
+    #fce42f 50%,
+    #e8e46e 75%,
+    #b3e283 100%
+  ); */
+}
+.notification-bar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+.notification-bar > div {
+  margin-left: 15px;
+}
+
+.user-introduction {
+  font-size: 18px;
+  font-weight: 700;
+}
+.user-habits-status {
+  color: #e99497;
+  font-weight: 400;
+}
+.user-todo-status {
+  color: #f3c583;
+  font-weight: 400;
+}
+.not-added {
+  color: #d1d1d1;
+  font-weight: 300;
+}
+
+.todo-page.card .page-title {
+  background: rgba(243, 197, 131, 0.4);
+}
+
+.page-title {
+  height: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  padding: 0 10px;
+}
+
+.page-title .title {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+
+/* Card design */
+.card {
+  border-color: transparent;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.user-name {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.input-wrapper label {
+  font-size: 36px;
+  line-height: normal;
+  font-weight: 400;
+  display: block;
+}
+.input-wrapper input {
+  font-size: 54px;
+  line-height: normal;
+  font-weight: 700;
+  display: block;
+  border: 0 !important;
+  outline: none !important;
+  background-color: transparent;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.btn {
+  min-width: 150px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  background: #b3e283;
+  border: 1px solid #b3e283;
+}
+
+.modal-content input,
+.modal-content select {
+  height: 54px;
+  padding: 7px 15px;
+  border-radius: 0;
+}
+
+.modal-content textarea {
+  height: 109px;
+  padding: 7px 15px;
+  border-radius: 0;
+}

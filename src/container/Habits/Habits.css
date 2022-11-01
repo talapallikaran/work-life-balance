@@ -1,0 +1,96 @@
+.habits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: rgba(243, 197, 131, 0.1);
+  counter-reset: my-awesome-counter;
+}
+.habits-list li {
+  list-style: none;
+  padding: 15px 20px 15px 60px;
+  margin: 0;
+  cursor: pointer;
+  counter-increment: my-awesome-counter;
+  position: relative;
+  transition: all ease 0.5s;
+}
+.habits-list li.completed {
+  background: #b3e283;
+}
+.habits-list li span {
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  opacity: 0.4;
+}
+.habits-list li::before {
+  position: absolute;
+  content: counter(my-awesome-counter);
+  font-weight: bold;
+  font-size: 14px;
+  font-weight: 300;
+  margin-right: 0;
+  line-height: 1;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #4a4a4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 20px;
+  color: #4a4a4a;
+  opacity: 0.5;
+}
+.habits-list li:hover {
+  background: rgba(243, 197, 131, 0.2);
+}
+.habits-list li:last-child:before {
+  content: "";
+  background-image: url("../../assets/add.svg");
+  background-position: center;
+  background-size: 15px 15px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.action-wrapper {
+  position: absolute;
+  right: 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  top: 10px;
+  padding-right: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.5s;
+  width: 100px;
+}
+.habits-list li:hover .action-wrapper {
+  opacity: 1;
+  visibility: visible;
+}
+.action-wrapper button {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  opacity: 0.3;
+  min-width: 25px;
+}
+.action-wrapper button:hover {
+  background: transparent;
+  opacity: 0.7;
+}
+.action-wrapper button img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  object-position: center center;
+  display: block;
+}
